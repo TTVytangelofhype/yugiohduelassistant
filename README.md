@@ -2,6 +2,19 @@
 
 Free Windows Yu-Gi-Oh! Master Duel **study assistant** with support for arbitrary decks, manual board-state entry, basic damage calculations and optional local screenshot analysis through [Ollama](https://ollama.com/download). **No paid API key needed.**
 
+
+## Full beginner guide (NVIDIA, AMD and Intel)
+
+**[Read the step-by-step USER GUIDE](USER_GUIDE.md)** for Windows installation, Ollama setup, screenshot analysis, adding any deck, damage calculation, troubleshooting and GPU compatibility.
+
+| GPU | Entry level for local screenshot AI | Recommended for 12B model |
+| --- | --- | --- |
+| NVIDIA RTX | 6–8 GB VRAM, 16 GB RAM (try Gemma 3 4B) | 16 GB VRAM, 32 GB RAM |
+| AMD Radeon | 8 GB VRAM, 16 GB RAM (subject to ROCm/Vulkan support) | 16 GB VRAM, 32 GB RAM (verify drivers) |
+| Intel Arc | 8 GB VRAM, 16 GB RAM (subject to Vulkan support) | 16 GB VRAM, 32 GB RAM (verify drivers) |
+
+These figures are approximate, **not tested minimum specifications**. The manual tools work without a dedicated graphics card. GPU support is dependent on your exact model, GPU driver and Ollama version: [official GPU compatibility](https://docs.ollama.com/gpu). The developer PC is an **RTX 5060 Ti 16 GB with 64 GB system RAM**.
+
 ## Installation
 1. Install Python 3.11+ and select “Add Python to PATH”.
 2. Download the repository and run `install.bat`, then `run.bat`.
